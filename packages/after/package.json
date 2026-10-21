@@ -1,6 +1,6 @@
 {
   "name": "@drift/after",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Validity-scoped async work: once a scope is invalidated, its pending work cannot commit state.",
   "license": "MIT",
   "type": "module",
