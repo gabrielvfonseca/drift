@@ -1,0 +1,83 @@
+:root {
+  color-scheme: light dark;
+  --bg: #fafafa;
+  --fg: #1a1a1a;
+  --muted: #666;
+  --bad: #c2410c;
+  --good: #15803d;
+  --card: #fff;
+  --border: #e5e5e5;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111;
+    --fg: #eee;
+    --muted: #999;
+    --card: #1b1b1b;
+    --border: #333;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 16px;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top-width: 4px;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.panel.bad {
+  border-top-color: var(--bad);
+}
+.panel.good {
+  border-top-color: var(--good);
+}
+
+.panel input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.status {
+  color: var(--muted);
+  font-size: 14px;
+}
+.status.warn {
+  color: var(--bad);
+}
+.status.ok {
+  color: var(--good);
+}
+.note {
+  font-size: 13px;
+  color: var(--bad);
+}
+
+button {
+  padding: 8px 14px;
+  font-size: 15px;
+  cursor: pointer;
+}
