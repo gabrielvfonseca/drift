@@ -1,4 +1,4 @@
-# drift
+# Drift
 
 Monorepo for [`@drift/after`](packages/after): validity over time for async work. Once a scope is
 invalidated, the work started under it cannot commit stale results.
