@@ -1,6 +1,6 @@
 {
   "name": "@drift/after-react",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React bindings for @drift/after: a stable scope per component, disposed on unmount.",
   "license": "MIT",
   "type": "module",
