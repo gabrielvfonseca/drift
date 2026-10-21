@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.png binary
+*.gif binary
+pnpm-lock.yaml -diff linguist-generated=true

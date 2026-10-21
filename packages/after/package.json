@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "Validity-scoped async work: once a scope is invalidated, its pending work cannot commit state.",
   "license": "MIT",
-  "author": "Gabriel Fonseca <gabriel@frontal.dev>",
   "type": "module",
   "sideEffects": false,
   "files": [
@@ -73,5 +72,13 @@
     "size-limit": "^14.2.0",
     "tsup": "^9.0.0",
     "vitest": "^5.0.5"
+  },
+  "homepage": "https://github.com/gabrielvfonseca/drift/tree/main/packages/after#readme",
+  "bugs": {
+    "url": "https://github.com/gabrielvfonseca/drift/issues"
+  },
+  "author": {
+    "name": "Gabriel Fonseca",
+    "email": "gabriel@frontal.dev"
   }
 }

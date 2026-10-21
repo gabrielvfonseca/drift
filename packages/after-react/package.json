@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "description": "React bindings for @drift/after: a stable scope per component, disposed on unmount.",
   "license": "MIT",
-  "author": "Gabriel Fonseca <gabriel@frontal.dev>",
   "type": "module",
   "sideEffects": false,
   "files": [
@@ -53,11 +52,12 @@
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "lint": "biome check .",
-    "check:package": "publint && attw --pack ."
+    "check:package": "publint && attw --pack .",
+    "size": "size-limit"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.5",
-    "@testing-library/react": "^16.3.3",
+    "@size-limit/preset-small-lib": "^14.2.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitest/coverage-v8": "^5.0.5",
@@ -65,6 +65,7 @@
     "publint": "^0.3.25",
     "react": "^19",
     "react-dom": "^19",
+    "size-limit": "^14.2.0",
     "tsup": "^9.0.0",
     "vitest": "^5.0.5"
   },
@@ -73,5 +74,23 @@
   },
   "dependencies": {
     "@drift/after": "workspace:^"
-  }
+  },
+  "homepage": "https://github.com/gabrielvfonseca/drift/tree/main/packages/after-react#readme",
+  "bugs": {
+    "url": "https://github.com/gabrielvfonseca/drift/issues"
+  },
+  "author": {
+    "name": "Gabriel Fonseca",
+    "email": "gabriel@frontal.dev"
+  },
+  "size-limit": [
+    {
+      "path": "dist/index.js",
+      "limit": "1 kB",
+      "gzip": true,
+      "ignore": [
+        "react"
+      ]
+    }
+  ]
 }

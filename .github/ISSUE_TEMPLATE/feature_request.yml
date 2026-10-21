@@ -1,0 +1,19 @@
+name: Feature request
+description: Suggest an addition or change to the API
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem you are trying to solve
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed API or behaviour
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+      description: Request counters, AbortController, existing libraries. Say why they fall short.
